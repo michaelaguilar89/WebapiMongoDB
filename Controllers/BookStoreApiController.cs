@@ -109,7 +109,7 @@ namespace WebApiMongoDB.Controllers
 
 				}
 				await _bookService.RemoveBookAsync(id);
-				_response.DisplayMessage = "Record id : " + id + " has update";
+				_response.DisplayMessage = "Record id : " + id + " has removed";
 				return Ok(_response);
 
 			}
